@@ -1,0 +1,12 @@
+  .grid {
+    display: grid;
+    grid-template-areas: "header header" "sidebar main""footer footer";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+  }
+  .header { grid-area: header; background: lightcoral; }
+  .sidebar { grid-area: sidebar; background: lightseagreen; }
+  .main { grid-area: main; background: lightyellow; }
+  .footer { grid-area: footer; background: lightgray; }
+  div { padding: 20px; text-align: center; font-weight: bold; }
