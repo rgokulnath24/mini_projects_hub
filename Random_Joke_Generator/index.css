@@ -1,0 +1,67 @@
+body
+{
+background: linear-gradient(to right,violet,blue);
+color:white;
+}
+#container
+{
+    max-width: 500px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.4);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    margin: auto;
+    animation:container 1s ease-in-out;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+@keyframes container
+{
+    0%
+    {
+        transform: translateX(-300px);
+        opacity: 0%;
+    }
+    100%
+    {
+        transform: translateX(0px);
+        opacity: 100%;
+    }
+}
+#container button
+{
+    background-color: cadetblue;
+    color:aliceblue;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    animation:button 1s ease;
+}
+@keyframes button{
+    0%
+    {
+        transform: translateY(100px);
+    }
+    100%
+    {
+        transform: translateY(0px);
+    }
+}
+#output
+{
+    font-size:20px;
+    padding: 10px;
+    color:rgb(220, 220, 17);
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+@keyframes output{
+    0%
+    {
+        transform: translateX(40px);
+    }
+    100%
+    {
+        transform: translateX(0px);
+    }
+}
